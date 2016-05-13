@@ -8,3 +8,9 @@ console.log(x);
 //Prototype
 var obj = {};
 console.dir(obj);
+
+//function
+function functionName(){
+	console.log(2 + 3); 
+}
+functionName();
