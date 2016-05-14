@@ -21,8 +21,12 @@ function a(){
 	function inner(){
 		console.log("inner", a);
 	}
-	 inner();
+	return inner();
 };
 a();
+
+//object creation
+var obj = {};
+console.log(obj);
 
 
