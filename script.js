@@ -16,11 +16,13 @@ function functionName(){
 functionName();
 
 //closure
-var a1 = 10;
 function a(){
-	var a2 = 20;
+	var a = 20;
 	function inner(){
-		console.log("innner", a2);
+		console.log("inner", a);
 	}
+	 inner();
 };
 a();
+
+
