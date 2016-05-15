@@ -29,4 +29,11 @@ a();
 var obj = {};
 console.log(obj);
 
+var obj = function (name){
+	this.name =  name;
+
+};
+var person = new obj("Yuvaraj");
+console.log("constructor", person.name);
+
 
