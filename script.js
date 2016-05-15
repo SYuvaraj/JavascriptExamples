@@ -1,5 +1,9 @@
 console.log('hello world');
 
+//variables
+var a = 10;
+var str = "Yuvaraj";
+var boolval = true;
 //hoisting
 x = 10;
 var x;
@@ -35,5 +39,10 @@ var obj = function (name){
 };
 var person = new obj("Yuvaraj");
 console.log("constructor", person.name);
+
+//protoype
+obj.protoype.age;
+obj.protoype.sayHi = function(){};
+
 
 
