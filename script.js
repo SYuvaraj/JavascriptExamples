@@ -27,13 +27,16 @@ console.log('vs', x);
 
 if ( true ){
 	let y =10;
+	console.log('vy', y);
 }
-console.log('vs', y);
 
-//hoisting
-x = 10;
-var x;
-console.log(x);
+
+//variable hoisting
+var myvar = "my value";
+(function(){
+	console.log('myvar', myvar);
+	var myvar = "local value";
+})();
 
 //Prototype
 var obj = {};
