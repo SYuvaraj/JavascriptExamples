@@ -1,14 +1,29 @@
 //Hello World
 function greetMe ( name ){
-	alert ("Hello " + name);
+	console.log ("Hello " + name);
 }
 greetMe('Yuvaraj');
-console.log('hello world');
+
+
+//Declarations
+var val;
+console.log('var is undefined', val);
+
+if ( val === undefined){
+	console.log('var is underfined');
+}
+else{
+	console.log('var is defined');
+}
+val = 10;
+console.log('var', val);
+
 
 //variables
 var a = 10;
 var str = "Yuvaraj";
 var boolval = true;
+
 //hoisting
 x = 10;
 var x;
