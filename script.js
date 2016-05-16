@@ -38,6 +38,9 @@ var myvar = "my value";
 	var myvar = "local value";
 })();
 
+//global & const variable
+const cv = 10;
+
 //Prototype
 var obj = {};
 console.dir(obj);
