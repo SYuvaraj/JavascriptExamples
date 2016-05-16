@@ -1,3 +1,8 @@
+//Hello World
+function greetMe ( name ){
+	alert ("Hello " + name);
+}
+greetMe('Yuvaraj');
 console.log('hello world');
 
 //variables
