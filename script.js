@@ -19,10 +19,16 @@ val = 10;
 console.log('var', val);
 
 
-//variables
-var a = 10;
-var str = "Yuvaraj";
-var boolval = true;
+//variable scope
+if ( true ){
+	var x =10;
+}
+console.log('vs', x);
+
+if ( true ){
+	let y =10;
+}
+console.log('vs', y);
 
 //hoisting
 x = 10;
