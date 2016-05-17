@@ -64,6 +64,18 @@ a();
 //array literal
 var myList = ['home', 'office', 'restaurants'];
 
+//object literal
+var cars = { myCar: "Hyundai", getCar:'Tommorow'};
+console.log('cars', cars.myCar);
+
+//conditional statements
+var ifVal;
+if ( ifVal == undefined){
+	console.log('undefined val');
+}
+else{
+	console.log('defined val');
+}
 //object creation
 var obj = {};
 console.log(obj);
