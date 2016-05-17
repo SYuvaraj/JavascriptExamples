@@ -87,6 +87,9 @@ switch(fruits){
 	default: console.log('fruits');
 }
 
+//throw statement
+throw "errror";
+
 //object creation
 var obj = {};
 console.log(obj);
