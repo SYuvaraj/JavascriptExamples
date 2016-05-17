@@ -61,6 +61,9 @@ function a(){
 };
 a();
 
+//array literal
+var myList = ['home', 'office', 'restaurants'];
+
 //object creation
 var obj = {};
 console.log(obj);
