@@ -76,6 +76,17 @@ if ( ifVal == undefined){
 else{
 	console.log('defined val');
 }
+
+//switch statement 
+var fruits = "orange";
+switch(fruits){
+	case "orange": console.log('orange');
+	break;
+	case "others": console.log('Others');
+	break;
+	default: console.log('fruits');
+}
+
 //object creation
 var obj = {};
 console.log(obj);
