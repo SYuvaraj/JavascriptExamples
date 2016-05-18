@@ -127,5 +127,15 @@ catch (e){
 	logMyErrors(e); //pass exception object to error handler -> your own function
 }
 
+openMyFile();
+try{
+	writeMyFile(theData);//This may error
+}
+catch (e){
+	handleError(e); //If we got error we handle it
+}
+finally{
+	closeMyFile(); //always close the resource
+}
 
 
