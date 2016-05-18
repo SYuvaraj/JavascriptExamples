@@ -127,15 +127,22 @@ catch (e){
 	logMyErrors(e); //pass exception object to error handler -> your own function
 }
 
-openMyFile();
+//finally
+
+//Error objects
+function doSomeThingErrorprone(){
+	if ( true ){
+		throw ( new Error('The message') );
+	} 
+	else{
+		return;
+	}
+}
 try{
-	writeMyFile(theData);//This may error
+	doSomeThingErrorprone();
 }
 catch (e){
-	handleError(e); //If we got error we handle it
+	console.log(e.name);
+	console.log(e.message);
 }
-finally{
-	closeMyFile(); //always close the resource
-}
-
 
