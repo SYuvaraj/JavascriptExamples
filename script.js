@@ -106,21 +106,24 @@ function getMonthName(mo){
 	mo = mo-1;// Adjust month number for array index (1 = Jan, 12 = Dec)
 	var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul",
                 "Aug","Sep","Oct","Nov","Dec"];
-
+    console.log('month', months[mo]);
     if (months[mo]){
     	return months[mo];
-    	console.log("months", months[mo]);
     }
     else{
     	throw "InvalidMonthNo";//throw keyword is used here
     }
 }
 try{
-	monthName = getMonthName(1);
+	monthName = getMonthName(0);
+	console.log("months", monthName);
 }
 catch (e){
 	monthName = "unknown";
 	console.log(monthName);
+	function logMyErrors(e){
+		console.log("Exception"+ e);
+	}
 	logMyErrors(e); //pass exception object to error handler -> your own function
 }
 
