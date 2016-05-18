@@ -88,22 +88,41 @@ switch(fruits){
 }
 
 //throw statement
-throw "errror";
 
-//object creation
-var obj = {};
-console.log(obj);
 
-var obj = function (name){
-	this.name =  name;
+//create an object type user exception
+// function userException(message){
+// 	this.message = message;
+// 	this.name = "User Exception";
+// }
+// userException.prototype.toString = function(){
+// 	return this.name +" "+ this.message+ "";
+// }
+// //create an instance of the object type and throw it
+// throw new userException("value too high");
 
-};
-var person = new obj("Yuvaraj");
-console.log("constructor", person.name);
+//try catch exceptions
+function getMonthName(mo){
+	mo = mo-1;// Adjust month number for array index (1 = Jan, 12 = Dec)
+	var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul",
+                "Aug","Sep","Oct","Nov","Dec"];
 
-//protoype
-obj.protoype.age;
-obj.protoype.sayHi = function(){};
+    if (months[mo]){
+    	return months[mo];
+    	console.log("months", months[mo]);
+    }
+    else{
+    	throw "InvalidMonthNo";//throw keyword is used here
+    }
+}
+try{
+	monthName = getMonthName(1);
+}
+catch (e){
+	monthName = "unknown";
+	console.log(monthName);
+	logMyErrors(e); //pass exception object to error handler -> your own function
+}
 
 
 
