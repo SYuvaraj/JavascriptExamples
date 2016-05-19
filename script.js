@@ -167,3 +167,10 @@ do{
 	i++;
 	console.log(i);
 }while(i > 1);
+
+//while loop
+var x = 0;
+var n = 5;
+while(n <= 5){
+	console.log('true');
+}
