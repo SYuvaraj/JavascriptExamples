@@ -161,4 +161,9 @@ var btn = document.getElementById("btn");
 btn.addEventListener("click", function(){
   alert('Number of options selected: ' + howMany(document.selectForm.musicTypes))
 });
-
+//do while
+var i = 0;
+do{
+	i++;
+	console.log(i);
+}while(i > 1);
