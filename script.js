@@ -174,3 +174,11 @@ var n = 5;
 while(n <= 5){
 	console.log('true');
 }
+var obj = {
+	fname: "Yuvaraj",
+	lname: "S"
+}
+for (var x in obj){
+	console.log(x);
+}
+//label, continue, break statment
