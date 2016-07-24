@@ -169,10 +169,10 @@ do{
 }while(i > 1);
 
 //while loop
-var x = 0;
-var n = 5;
-while(n <= 5){
-	console.log('true');
+// var x = 0;
+// var n = 5;
+// while(n <= 5){
+// 	console.log('true');
 }
 var obj = {
 	fname: "Yuvaraj",
@@ -182,3 +182,17 @@ for (var x in obj){
 	console.log(x);
 }
 //label, continue, break statment
+//for in statement
+function dump_props(obj, obj_name) {
+  var result = "";
+  for (var i in obj) {
+    result += obj_name + "." + i + " = " + obj[i] + "<br>";
+  }
+  result += "<hr>";
+  return result;
+};
+var car = {
+	name: 'mercedes',
+	year: 2016
+};
+console.log( "dujmp",dump_props(car, car.name) );
