@@ -162,18 +162,18 @@ btn.addEventListener("click", function(){
   alert('Number of options selected: ' + howMany(document.selectForm.musicTypes))
 });
 //do while
-var i = 0;
-do{
-	i++;
-	console.log(i);
-}while(i > 1);
+// var i = 0;
+// do{
+// 	i++;
+// 	console.log(i);
+// }while(i > 1);
 
 //while loop
 // var x = 0;
 // var n = 5;
 // while(n <= 5){
 // 	console.log('true');
-}
+// }
 var obj = {
 	fname: "Yuvaraj",
 	lname: "S"
@@ -185,14 +185,29 @@ for (var x in obj){
 //for in statement
 function dump_props(obj, obj_name) {
   var result = "";
+  console.log('obj', obj);
   for (var i in obj) {
     result += obj_name + "." + i + " = " + obj[i] + "<br>";
+     console.log('return', result );
   }
   result += "<hr>";
   return result;
+ 
 };
 var car = {
 	name: 'mercedes',
 	year: 2016
 };
-console.log( "dujmp",dump_props(car, car.name) );
+dump_props(car, car.name);
+
+//diff b/w for off and for in
+let arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (let i in arr) {
+   console.log(i); // logs "0", "1", "2", "foo"
+}
+
+for (let i of arr) {
+   console.log(i); // logs "3", "5", "7"
+}
